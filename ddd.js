@@ -1,11 +1,13 @@
 var style = `<link rel="stylesheet" href="ddd.css">`;
+var urlLocal = `http://localhost:3000/`;
+var urlMaster = `https://testdrive-flax.vercel.app/`;
 var fontcss = `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">`;
 var floatbutton = `<a href="#"  onclick="show('popup2')" class="floatbutton"> <i class="fa fa-plus my-float"></i></a>`;
 var custpopup = `
 <div class="popup" id="popup2">
   <a href="#" onclick="hide('popup2')"><i class="fa fa-times closebutton"></i></a>
   <div id="iframe_container" style="margin:0px;padding:0px;overflow:hidden">
-  <iframe class ="myiframe" src="http://localhost:3000/" name="ifr" scrolling="yes" frameborder="0" style="position: absolute; height:100%; width:100%;"  onload = "document.body.style.height = frames.ifr.document.body.offsetHeight + parseInt(document.getElementById('iframe_container').style.top) + parseInt(document.getElementById('iframe_container').style.bottom) + 'px'" ></iframe>
+  <iframe class ="myiframe" src=${urlMaster} name="ifr" scrolling="yes" frameborder="0" style="position: absolute; height:100%; width:100%;"  onload = "document.body.style.height = frames.ifr.document.body.offsetHeight + parseInt(document.getElementById('iframe_container').style.top) + parseInt(document.getElementById('iframe_container').style.bottom) + 'px'" ></iframe>
   </div>
 </div>
 `;
