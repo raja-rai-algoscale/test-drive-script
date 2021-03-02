@@ -6,7 +6,7 @@ var floatbutton = `<a href="#"  onclick="show('popup2')" class="floatbutton"> <i
 var custpopup = `
 <div class="popup" id="popup2">
   <a href="#" onclick="hide('popup2')"><i class="fa fa-times closebutton"></i></a>
-  <div id="iframe_container" style="margin:0px;padding:0px;overflow:hidden">
+  <div id="iframe_container">
   <iframe class ="myiframe" src=${urlMaster} name="ifr" scrolling="yes" frameborder="0"></iframe>
   </div>
 </div>
