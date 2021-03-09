@@ -1,6 +1,6 @@
 var style = `<link rel="stylesheet" href="ddd.css">`;
 var urlLocal = `http://localhost:3000/`;
-var urlMaster = `https://testdrive-flax.vercel.app/`;
+var urlMaster = `https://testdrive-flax.vercel.app/?rt=rec3fb6uC6mZkUcNs`;
 var fontcss = `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">`;
 var floatbutton = `<a href="#"  onclick="show('popup2')" class="floatbutton"> <i class="fa fa-plus my-float"></i></a>`;
 var custpopup = `
