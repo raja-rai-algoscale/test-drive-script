@@ -24,9 +24,12 @@ var style = `<link rel="stylesheet" href="ddd.css">`;
 var urlMaster = `https://testdrivenow-sandy.vercel.app/?rt=${rt}`;
 var fontcss = `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">`;
 var floatbutton = `<a href="#"  onclick="show('popup2')" class="floatbutton"> <i class="fa fa-plus my-float"></i></a>`;
+{
+  /* <a href="#" onclick="hide('popup2')"><i class="fa fa-times closebutton"></i></a> */
+}
 var custpopup = `
 <div class="popup" id="popup2">
-  <a href="#" onclick="hide('popup2')"><i class="fa fa-times closebutton"></i></a>
+  <a href="#" onclick="hide('popup2')"><i class="fa fa-times-thin fa-2x closebutton"></i></a>
   <div id="iframe_container">
   <iframe class ="myiframe" src=${urlMaster} name="ifr" scrolling="yes" frameborder="0"></iframe>
   </div>
