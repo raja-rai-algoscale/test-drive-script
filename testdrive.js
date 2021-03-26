@@ -20,7 +20,8 @@ const getRTParameter = (scripts) => {
 var scripts = document.getElementsByTagName('script');
 var rt = getRTParameter(scripts);
 
-var style = `<link rel="stylesheet" href="ddd.css">`;
+// var style = `<link rel="stylesheet" href="testdrive.css">`;
+var style = `<link rel="stylesheet" href="https://offers.pricehelpers.com/testdrive.css">`;
 var urlMaster = `https://testdrivenow-sandy.vercel.app/?rt=${rt}`;
 var fontcss = `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">`;
 var floatbutton = `<a href="#"  onclick="show('popup2')" class="floatbutton"> <i class="fa fa-plus my-float"></i></a>`;
