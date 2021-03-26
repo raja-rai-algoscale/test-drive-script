@@ -1,6 +1,6 @@
 var style = `<link rel="stylesheet" href="ddd.css">`;
 var urlLocal = `http://localhost:3000/`;
-var urlMaster = `https://testdrive-flax.vercel.app/?rt=rec3fb6uC6mZkUcNs`;
+var urlMaster = `https://testdrivenow-sandy.vercel.app/?rt=rec3fb6uC6mZkUcNs`;
 var fontcss = `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">`;
 var floatbutton = `<a href="#"  onclick="show('popup2')" class="floatbutton"> <i class="fa fa-plus my-float"></i></a>`;
 var custpopup = `
@@ -12,12 +12,11 @@ var custpopup = `
 </div>
 `;
 var template = style + fontcss + floatbutton + custpopup;
-var actualapp = `https://testdrive-on3r0vbhp.vercel.app/`;
 var render = function (template, node) {
   node.innerHTML = template;
 };
 window.onload = function () {
-  render(template, document.querySelector('div'));
+  render(template, document.querySelector('body'));
 };
 
 $ = function (id) {
