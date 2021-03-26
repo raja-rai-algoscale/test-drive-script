@@ -1,11 +1,16 @@
+/** @format */
+
 var style = `<link rel="stylesheet" href="ddd.css">`;
 var urlLocal = `http://localhost:3000/`;
 var urlMaster = `https://testdrivenow-sandy.vercel.app/?rt=rec3fb6uC6mZkUcNs`;
 var fontcss = `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">`;
 var floatbutton = `<a href="#"  onclick="show('popup2')" class="floatbutton"> <i class="fa fa-plus my-float"></i></a>`;
+{
+  /* <a href="#" onclick="hide('popup2')"><i class="fa fa-times closebutton"></i></a> */
+}
 var custpopup = `
 <div class="popup" id="popup2">
-  <a href="#" onclick="hide('popup2')"><i class="fa fa-times closebutton"></i></a>
+  <a href="#" onclick="hide('popup2')"><i class="fa fa-times-thin fa-2x closebutton"></i></a>
   <div id="iframe_container">
   <iframe class ="myiframe" src=${urlMaster} name="ifr" scrolling="yes" frameborder="0"></iframe>
   </div>
@@ -16,17 +21,17 @@ var render = function (template, node) {
   node.innerHTML = template;
 };
 window.onload = function () {
-  render(template, document.querySelector('body'));
+  render(template, document.querySelector("body"));
 };
 
 $ = function (id) {
   return document.getElementById(id);
 };
 var show = function (id) {
-  $(id).style.display = 'block';
+  $(id).style.display = "block";
 };
 var hide = function (id) {
-  $(id).style.display = 'none';
+  $(id).style.display = "none";
 };
 
 window.onscroll = function () {
@@ -37,7 +42,7 @@ window.onscroll = function () {
 window.onresize = function () {
   document.body.style.height =
     frames.ifr.document.body.offsetHeight +
-    parseInt(document.getElementById('iframe_container').style.top) +
-    parseInt(document.getElementById('iframe_container').style.bottom) +
-    'px';
+    parseInt(document.getElementById("iframe_container").style.top) +
+    parseInt(document.getElementById("iframe_container").style.bottom) +
+    "px";
 };
